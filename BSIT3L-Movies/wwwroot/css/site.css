@@ -19,7 +19,8 @@ html {
 
 body {
     background-color: #223156; /* Background color */
-    background-image: url('film.jpg'); /* Background image */
+    background-image: url('marvel.jpg');
+
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 60px;

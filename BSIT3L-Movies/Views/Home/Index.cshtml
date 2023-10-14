@@ -6,8 +6,8 @@
 
 <style>
     body {
-        background-color: #072541; /* Background color */
-        background-image: url('film.jpg'); /* Background image */
+        background-color: #7788;
+        background-image: url('marvel.jpg'); /* Background color */
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -21,7 +21,7 @@
             <th>Rating</th>
             <th>Release Year</th>
             <th>Genre</th>
-            <th>Image</th>
+            
               
         </tr>
     </thead>
@@ -34,9 +34,7 @@
                 <td>@movie.Rating</td>
                 <td>@movie.ReleaseYear</td>
                 <td>@movie.Genre</td>
-                    <td>
-                        <img src=@Url.Content("~/images/@movie.ImageFileName") />
-                    </td>
+                
                     
                     
             </tr>

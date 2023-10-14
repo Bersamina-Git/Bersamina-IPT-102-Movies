@@ -6,19 +6,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Movie</title>
+    <style>
+        body {
+            background-color: white; /* Set the background color to black */
+            text-align: center; /* Align content to the center horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
 </head>
 
-
 <body>
-    <h2 style="color: white;">Movie Details</h2>
-    <p style="color: violet">Movie ID: @Model.Id</p>
-    <p style="color: white;">Movie Name: @Model.Name</p>
-    <p style="color: red;">Rating: @Model.Rating</p>
-    <p style="color: green;">Release Year: @Model.ReleaseYear</p>
-    <p style="color: orange;">Genre: @Model.Genre</p>
+    <div style="background-color: #333; padding: 20px; text-align: center;">
+        <h2 style="color: white;">Movie Details</h2>
+        <p style="color: violet">Movie ID: @Model.Id</p>
+        <p style="color: white;">Movie Name: @Model.Name</p>
+        <p style="color: red;">Rating: @Model.Rating</p>
+        <p style="color: green;">Release Year: @Model.ReleaseYear</p>
+        <p style="color: orange;">Genre: @Model.Genre</p>
+        <img src="/images/@Model.ImageFilename" alt="@Model.ImageFilename" />
 
-    
-    
 
+    </div>
 </body>
+
 </html>
