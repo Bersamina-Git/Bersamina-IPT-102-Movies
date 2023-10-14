@@ -4,7 +4,15 @@
     ViewData["Title"] = "Home Page";
 }
 
-
+<style>
+    body {
+        background-color: #072541; /* Background color */
+        background-image: url('film.jpg'); /* Background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+<div class="table-container">
 <table>
     <thead>
         <tr>
@@ -13,6 +21,8 @@
             <th>Rating</th>
             <th>Release Year</th>
             <th>Genre</th>
+            <th>Image</th>
+              
         </tr>
     </thead>
     <tbody>
@@ -24,8 +34,14 @@
                 <td>@movie.Rating</td>
                 <td>@movie.ReleaseYear</td>
                 <td>@movie.Genre</td>
+                    <td>
+                        <img src=@Url.Content("~/images/@movie.ImageFileName") />
+                    </td>
+                    
+                    
             </tr>
         }
     </tbody>
 </table>
+</div>
 
