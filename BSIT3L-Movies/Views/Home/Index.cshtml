@@ -13,33 +13,28 @@
     }
 </style>
 <div class="table-container">
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Rating</th>
-            <th>Release Year</th>
-            <th>Genre</th>
-            
-              
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var movie in Model)
-        {
+    <table>
+        <thead>
             <tr>
-                <td>@movie.Id</td>
-                <td ><a href = "/movies/getmovie/@movie.Id" > @movie.Name </a></td>
-                <td>@movie.Rating</td>
-                <td>@movie.ReleaseYear</td>
-                <td>@movie.Genre</td>
-                
-                    
-                    
+                <th>ID</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Release Year</th>
+                <th>Genre</th>    
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.Id</td>
+                    <td><a href="/movies/getmovie/@movie.Id">@movie.Name</a></td>
+                    <td>@movie.Rating</td>
+                    <td>@movie.ReleaseYear</td>
+                    <td>@movie.Genre</td>
+                     </tr>
+            }
+        </tbody>
+    </table>
 </div>
 

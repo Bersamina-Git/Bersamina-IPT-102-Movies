@@ -1,6 +1,5 @@
 ﻿@model BSIT3L_Movies.Models.MovieViewModel
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +7,8 @@
     <title>Movie</title>
     <style>
         body {
-            background-color: white; /* Set the background color to black */
-            text-align: center; /* Align content to the center horizontally */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: white;
+            text-align: center;
             margin: 0;
         }
     </style>
@@ -28,9 +23,7 @@
         <p style="color: green;">Release Year: @Model.ReleaseYear</p>
         <p style="color: orange;">Genre: @Model.Genre</p>
         <img src="/images/@Model.ImageFilename" alt="@Model.ImageFilename" />
-
-
     </div>
 </body>
-
 </html>
+
